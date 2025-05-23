@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deux Divs Carrées - Centrées avec Flexbox</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100vh;
+    }
+    .square {
+      width:  100px;
+      height: 200px;
+      background-color: lightgray;
+      padding: 20px;
+      margin: 10px;
+      overflow: auto; /* Permet le défilement si nécessaire */
+      display: flex;
+      justify-content: space-around; /* Aligne les éléments horizontalement */
+      align-items: center; /* Aligne les éléments verticalement */
+      flex-direction: row; /* Arrange les éléments en colonne */
+    }
+    .ui.list .item {
+      cursor: pointer;
+    }
+    .ui.list .item.active {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="ui raised very padded text container segment square">
+    <h2 class="ui header">Liste Sélectionnable</h2>
+    <div class="ui list">
+      <div class="item">Élément 1</div>
+      <div class="item">Élément 2</div>
+      <div class="item">Élément 3</div>
+      <div class="item">Élément 4</div>
+      <div class="item">Élément 5</div>
+      <!-- Répétez les éléments au besoin -->
+      <div class="item">Élément 6</div>
+      <div class="item">Élément 7</div>
+      <div class="item">Élément 8</div>
+      <div class="item">Élément 9</div>
+      <div class="item">Élément 10</div>
+      <div class="item">Élément 11</div>
+      <div class="item">Élément 12</div>
+      <div class="item">Élément 13</div>
+      <div class="item">Élément 14</div>
+      <div class="item">Élément 15</div>
+      <div class="item">Élément 16</div>
+      <div class="item">Élément 17</div>
+      <div class="item">Élément 18</div>
+      <div class="item">Élément 19</div>
+      <div class="item">Élément 20</div>
+    </div>
+  </div>
+
+  <div class="ui raised very padded text container segment square">
+    <h2 class="ui header">Liste Sélectionnable</h2>
+    <div class="ui list">
+      <div class="item">Élément 1</div>
+      <div class="item">Élément 2</div>
+      <div class="item">Élément 3</div>
+      <div class="item">Élément 4</div>
+      <div class="item">Élément 5</div>
+      <!-- Répétez les éléments au besoin -->
+      <div class="item">Élément 6</div>
+      <div class="item">Élément 7</div>
+      <div class="item">Élément 8</div>
+      <div class="item">Élément 9</div>
+      <div class="item">Élément 10</div>
+      <div class="item">Élément 11</div>
+      <div class="item">Élément 12</div>
+      <div class="item">Élément 13</div>
+      <div class="item">Élément 14</div>
+      <div class="item">Élément 15</div>
+      <div class="item">Élément 16</div>
+      <div class="item">Élément 17</div>
+      <div class="item">Élément 18</div>
+      <div class="item">Élément 19</div>
+      <div class="item">Élément 20</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script>
+  $('.ui.list .item').click(function() {
+    $(this).toggleClass('active');
+  });
+</script>
+
+</body>
+</html>
